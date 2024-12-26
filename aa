@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mDowód - Dokumenty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fc;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        header .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        header .profile div {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #0078d4;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+        }
+
+        header .notification {
+            font-size: 20px;
+            color: #0078d4;
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .cards {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card {
+            flex: 1;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .grid .icon {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .grid .icon img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .grid .icon span {
+            font-size: 14px;
+            color: #333;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #ffffff;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        footer a {
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        footer a img {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 5px;
+        }
+
+        .details {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .details img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .details .info {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .details .info strong {
+            font-weight: bold;
+        }
+
+        .upload-button {
+            margin-top: 10px;
+            background: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .upload-button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <div>MN</div>
+            <span>Mikołaj Nowak</span>
+        </div>
+        <div class="notification">🔔</div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Dokumenty</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="dowod_example.png" alt="mDowód">
+                    <h3>mDowód</h3>
+                </div>
+                <div class="card">
+                    <img src="prawojazdy_example.png" alt="Prawo jazdy">
+                    <h3>Prawo jazdy</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Usługi</h2>
+            <div class="grid">
+                <div class="icon">
+                    <img src="punkty_karne.png" alt="Punkty karne">
+                    <span>Punkty karne</span>
+                </div>
+                <div class="icon">
+                    <img src="naruszenia.png" alt="Naruszenia środowiskowe">
+                    <span>Naruszenia środowiskowe</span>
+                </div>
+                <div class="icon">
+                    <img src="autobus.png" alt="Bezpieczny autobus">
+                    <span>Bezpieczny autobus</span>
+                </div>
+                <div class="icon">
+                    <img src="polakzagranica.png" alt="Polak za granicą">
+                    <span>Polak za granicą</span>
+                </div>
+                <div class="icon">
+                    <img src="bilkom.png" alt="Bilkom">
+                    <span>Bilkom</span>
+                </div>
+                <div class="icon">
+                    <img src="pesel.png" alt="Zastrzeż PESEL">
+                    <span>Zastrzeż PESEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="details">
+            <h2>mDowód</h2>
+            <p class="info">
+                <strong>Mikołaj Nowak</strong><br>
+                POLSKIE Obywatelstwo<br>
+                Data urodzenia: 19.02.2006<br>
+                Numer PESEL: 06221959839<br>
+                Dokument ważny ✅
+            </p>
+            <input type="file" accept="image/*">
+            <button class="upload-button">Dodaj zdjęcie</button>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#">
+            <img src="home.png" alt="Start">
+            <span>Start</span>
+        </a>
+        <a href="#">
+            <img src="documents.png" alt="Dokumenty">
+            <span>Dokumenty</span>
+        </a>
+        <a href="#">
+            <img src="services.png" alt="Usługi">
+            <span>Usługi</span>
+        </a>
+        <a href="#">
+            <img src="qr.png" alt="Kod QR">
+            <span>Kod QR</span>
+        </a>
+        <a href="#">
+            <img src="more.png" alt="Więcej">
+            <span>Więcej</span>
+        </a>
+    </footer>
+</body>
+</html>
